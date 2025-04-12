@@ -77,7 +77,7 @@ kind create cluster --config kind-config.yml
 
 3. **Deploy the Database**: Navigate to the ```k8s-setup/database``` directory and apply the database configuration first:
 ```bash
-kubectl apply -f .
+kubectl apply -f database/
 ```
 Wait until the database pod is fully running and healthy. You can check the pod status with:
 ```bash
@@ -87,7 +87,7 @@ Make sure the database pod is in the ```Running``` state before proceeding.
 
 4. **Deploy Backend and Frontend**: Once the database is running, apply the backend, frontend, and ingress configuration files:
 ```bash
-kubectl apply -f ../backend/ -f ../frontend/ -f ../ingress/
+kubectl apply -f backend/ -f frontend/ -f ingress/
 ```
 
 5. **Update** ```/etc/hosts```: Finally, to ensure proper domain resolution on your local machine, add the following line to your ```/etc/hosts``` file:
