@@ -1,0 +1,153 @@
+.admin-dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #a8c0ff, #3f2b96);
+    background-size: cover;
+}
+
+
+.dashboard-page-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    
+    
+}
+
+.dashboard-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.dashboard-card-title {
+    font-size: 1.5rem;
+    color: #3f2b96;
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-card-value {
+    font-size: 3rem;
+    color: #a8c0ff;
+}
+
+.add-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.dashboard-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #3f2b96;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-button:hover {
+    background-color: #654add;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.dashboard-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.dashboard-link:hover {
+    text-decoration: none;
+}
+
+.add-icon {
+    transition: transform 0.5s ease-in-out;
+}
+
+.rotate:hover {
+    animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.user-table-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+}
+
+.user-table-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #3f2b96;
+    margin-bottom: 1rem;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+    color: #a8c0ff;
+    font-weight: 700;
+}
+
+.user-table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}

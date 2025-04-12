@@ -1,0 +1,367 @@
+.user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #005aa7, #66a6ff) no-repeat fixed center;
+    background-size: cover;
+
+}
+
+.user-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 220px);
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    margin: 1rem 1rem 1rem 200px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.user-button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    padding: 0.4rem 0.9rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+select {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+select:hover,
+select:focus {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+option {
+    font-size: 16px;
+}
+
+.add-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.add-button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    padding: 0.4rem 0.9rem;
+    background-color: rgb(0, 153, 255);
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.user-button:hover {
+    background-color: rgb(0, 83, 139);
+}
+
+.course-button {
+    margin-right: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    padding: 0.4rem 0.9rem;
+    background-color: rgb(0, 153, 255);
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+.user-button-update {
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.user-button-update a {
+    color: white;
+}
+
+.user-button-update:hover {
+    background-color: #218838;
+}
+
+.user-button-update a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.user-button-delete {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.user-button-delete:hover {
+    background-color: #c82333;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.user-table-header {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.8rem 0;
+    border-bottom: 2px solid #dee2e6;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.user-table td {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+}
+
+.user-table td:last-child {
+    border-right: none;
+}
+
+.user-table td:last-child {
+    border-right: none;
+}
+
+.form-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.form-modal-content {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+}
+
+.form-modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-modal-content label {
+    margin-bottom: 10px;
+}
+.content {
+    /* margin-left: 280px;*/
+    overflow: auto;
+    margin-left: 205px;
+ }
+.form-modal-content input,
+.form-modal-content select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-modal-content button {
+    background-color: #0077B6;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-modal-content button:hover {
+    background-color: #004b6b;
+}
+
+.form-modal-content button+button {
+    margin-left: 10px;
+}
+
+.update-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.update-modal-content {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+}
+
+.update-modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.update-modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.update-modal-content label {
+    margin-bottom: 10px;
+}
+
+.update-modal-content input,
+.update-modal-content select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.update-modal-content button {
+    background-color: #28a745;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.update-modal-content button:hover {
+    background-color: #218838;
+}
+
+.update-modal-content button+button {
+    margin-left: 10px;
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-filter {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.user-filter h4 {
+    margin-right: 10px;
+}
+
+.user-filter select {
+    appearance: none;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 30px 10px 10px;
+    outline: none;
+    width: 150px;
+}
+
+.user-filter select::-ms-expand {
+    display: none;
+}
+
+.user-filter::before {
+    font-family: FontAwesome;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.user-filter option {
+    background-color: #fff;
+    color: #333;
+}
+
+.user-filter option:hover {
+    background-color: #e6e6e6;
+}
+
+.user-filter option:checked {
+    background-color: #008cba;
+    color: #fff;
+}
+
+.search-input {
+    width: 200px;
+    height: 20px;
+    margin-top: 22px;
+    margin-left: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: blue;
+}

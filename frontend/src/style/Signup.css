@@ -1,0 +1,120 @@
+.FormName {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.signupClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #005aa7, #66a6ff);
+}
+
+.signupContainer {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 1rem 2rem 2rem 2rem;
+    width: 400px;
+}
+
+.signupContainer img {
+    width: 100px;
+    height: 100px;
+}
+
+.signupForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.imageWrapper img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.signupForm label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.signupForm input[type='text'],
+.signupForm input[type='email'],
+.signupForm input[type='password'] {
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.signupForm input[type='text']::placeholder,
+.signupForm input[type='email']::placeholder,
+.signupForm input[type='password']::placeholder {
+    color: #a1a1a1;
+}
+
+.signupForm label svg {
+    width: 20px;
+    height: 17px;
+    margin-right: 7px;
+}
+
+.btn {
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+
+.btn-success {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: #0062cc;
+}
+
+.btn-default {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.btn-default:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.checkboxForm {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.checkboxForm input[type='checkbox'] {
+    margin-right: 10px;
+}

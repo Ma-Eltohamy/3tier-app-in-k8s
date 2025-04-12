@@ -1,0 +1,19 @@
+.home {
+    margin-top: 110px;/*200*/
+}
+
+.sidebar {
+    width: 200px;/*280*/
+    height: 100vh;
+    position: fixed;
+}
+
+.content {
+   /* margin-left: 280px;*/
+   overflow: auto;
+   margin-left: 205px;
+}
+
+.home .contact .col-md-3 {
+    border: 2px solid white;
+}

@@ -1,0 +1,89 @@
+.loginClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #005aa7, #66a6ff);
+}
+
+.loginContiner {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 1rem 2rem 2rem 2rem;
+    width: 400px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.loginForm label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.loginForm input[type='email'],
+.loginForm input[type='password'] {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.loginForm label svg {
+    width: 20px;
+    height: 17px;
+    margin-right: 7px;
+}
+
+.btn {
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+
+.btn-success {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.btn-success:hover {
+    background-color: #0062cc;
+}
+
+.btn-default {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.btn-default:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.checkboxForm {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.checkboxForm input[type='checkbox'] {
+    margin-right: 10px;
+}
